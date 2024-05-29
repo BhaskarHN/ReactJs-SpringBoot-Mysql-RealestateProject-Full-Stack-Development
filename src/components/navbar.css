@@ -1,0 +1,57 @@
+/* Navbar.css */
+
+.navbar {
+  background-color: #333;
+  padding: 1rem;
+margin-top: 4%;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-item {
+  padding: 0 1rem;
+}
+
+.nav-item a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 150px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #333;
+  padding: 0.5rem 1rem;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-btn:hover + .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+.dropdown-btn{
+  color: white;
+  margin-left: 10px; /* Adjust left margin as needed */
+  margin-right: 60px; /* Adjust right margin as needed */
+}
+
+.nav-item{
+font-size: 20px;
+margin-right: 2px;
+}

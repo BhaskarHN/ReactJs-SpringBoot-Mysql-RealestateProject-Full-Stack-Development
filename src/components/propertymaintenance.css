@@ -1,0 +1,12 @@
+.center-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width:70vh;
+    background-image: url('https://img.freepik.com/free-photo/top-view-background-beautiful-white-grey-brown-cream-blue-background_140725-72219.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  

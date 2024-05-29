@@ -1,0 +1,49 @@
+/* Add your custom CSS styles here */
+.contaiinerr {
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width:212vh;
+  }
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="file"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Added width */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Added width */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .contaiinerr {
+    background-image: url('https://img.freepik.com/free-photo/woman-suggesting-changes-plan_23-2148252084.jpg');
+    background-size: cover;
+    background-position: center;
+  }

@@ -1,0 +1,53 @@
+/* Add your custom CSS styles here */
+.conttainer{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  width:150vh;
+  
+  }
+  
+  h1 {
+    margin-bottom: 30px;
+    color:black;
+
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  input[type="file"] {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* Added width */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Added width */
+    box-sizing: border-box; /* Ensures padding is included in width calculation */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .conttainer {
+    background-image: url('https://www.forbesindia.com/fbimages/900x600/proportional/jpeg/blog/wp-content/uploads/2020/09/BG_REAL-ESTATE.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  

@@ -1,0 +1,99 @@
+/* imageSlider.css */
+
+.image-slider {
+    position: relative;
+    height: 500px; /* Set a fixed height for the image slider container */
+    overflow: hidden; /* Hide overflowing images beyond the fixed height */
+  }
+  
+  .image-slider img {
+    width: 130%;
+    height: 10%;
+    object-fit: cover; /* Use 'cover' to maintain the image's aspect ratio and cover the entire container */
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .slider-controls button {
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    padding: 8px 16px;
+    margin: 0 5px;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .slider-controls button:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  .slider-controls {
+    margin-top: 30px;
+  }
+  /* app.css */
+
+  .ima-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh; /* Set the container height to the full viewport height */
+    background-color: #f2f2f2; /* Optional: Add a background color to the page container */
+    margin-top: 10px;
+    padding-top:0cqmax;
+    width: fit-content;
+  }
+  /* imageSlider.css */
+
+.ima-slider {
+    position: relative;
+    width: 10vw; /* Set the image slider container width to full viewport width */
+    height: 60px; /* Set a fixed height for the image slider container */
+    overflow: hidden; /* Hide overflowing images beyond the fixed height */
+  }
+  
+  .ima-slider img {
+    width: 20%; /* Set the image width to 100% of the slider container */
+    height: 40%;
+    object-fit: cover; /* Use 'cover' to maintain the image's aspect ratio and cover the entire container */
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  /* imageSlider.css */
+
+.ima-slider {
+    position: relative;
+    width: 96vw; /* Set the image slider container width to full viewport width */
+    height: 96vh; /* Set the height of the image slider to full viewport height */
+    overflow: hidden; /* Hide overflowing images beyond the fixed height */
+  }
+  
+  .ima-slider img {
+    width: 150%; /* Set the image width to 100% of the slider container */
+    height: 150%;
+    /* Use 'cover' to maintain the image's aspect ratio and cover the entire container */
+  }
+  
+  .slider-controls {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  /* Rest of your slider controls styles... */
+  
+  /* Rest of your slider controls styles... */
+  
+  
