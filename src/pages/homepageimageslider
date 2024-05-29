@@ -1,0 +1,44 @@
+// ImageSlider.js
+import React, { useState, useEffect } from 'react';
+import '../components/imageSlider.css';
+
+const ImaSlider = () => {
+  const ima = [
+    'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg',
+    'https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?cs=srgb&dl=pexels-binyamin-mellish-106399.jpg&fm=jpg',
+    'https://wallpapers.com/images/hd/real-estate-digital-art-0kmi22tcj2x60lim.jpg',
+    'https://image.shutterstock.com/image-photo/real-estate-agent-house-model-260nw-129797951.jpg',
+    'https://cdn.pixabay.com/photo/2016/11/18/17/46/house-1836070_1280.jpg',
+    'https://wallpapers.com/images/hd/real-estate-property-night-view-sttah8uqfyoch8ln.jpg',
+    'https://wallpaperaccess.com/full/1899348.jpg',
+  ];
+  const [currentIma, setCurrentIma] = useState(0);
+  const prevIma = () => {
+    setCurrentIma((prevIndex) => (prevIndex === 0 ? ima.length - 1 : prevIndex - 1));
+  };
+  const nextIma = () => {
+    setCurrentIma((prevIndex) => (prevIndex === ima.length - 1 ? 0 : prevIndex + 1));
+  };
+  // Function to move to the next image automatically after a set interval
+  const autoNextIma = () => {
+    setCurrentIma((prevIndex) => (prevIndex === ima.length - 1 ? 0 : prevIndex + 1));
+  };
+
+  // Use useEffect to set up the interval when the component mounts
+  useEffect(() => {
+    const sliderInterval = setInterval(autoNextIma, 3000); // Change the interval time here (e.g., 3000ms = 3 seconds)
+    return () => clearInterval(sliderInterval); // Clean up the interval when the component unmounts
+  }, []);
+
+  return (
+    <div className="ima-slider">
+      <img src={ima[currentIma]} alt={`Ima ${currentIma + 1}`} />
+      <div className="slider-controls">
+        <button onClick={prevIma}>&#10094;</button>
+        <button onClick={nextIma}>&#10095;</button>
+      </div>
+    </div>
+  );
+};
+
+export default ImaSlider;
